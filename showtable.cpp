@@ -1,6 +1,8 @@
 #include <iostream>
 #include "header.h"
-using namespace std;
+using std::cout;
+using std::endl;
+
 void showbotdeck() {
         bottotalcards = botdeck.size();
         switch(bottotalcards) {
@@ -12,7 +14,12 @@ void showbotdeck() {
                     cout<<"                          | "<<botsum<<" / 21 |                                             |"<<endl;
                     cout<<"                          |----------                                             |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            "<<botdeck[0]<<"   "<<botdeck[1]<<endl;
+                    cout<<"                          |                 ";
+                    btalign(2);
+                    for (int i = 1; i <= 30; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -25,7 +32,12 @@ void showbotdeck() {
                     cout<<"                          | "<<botsum<<" / 21 |                                         |"<<endl;
                     cout<<"                          |--------------                                         |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            "<<botdeck[0]<<"   "<<botdeck[1]<<endl;
+                    cout<<"                          |                 ";
+                    btalign(2);
+                    for (int i = 1; i <= 30; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -40,7 +52,12 @@ void showbotdeck() {
                     cout<<"                          | "<<botsum<<" / 21 |                                             |"<<endl;
                     cout<<"                          |----------                                             |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            "<<botdeck[0]<<"   "<<botdeck[1]<<"   "<<botdeck[2]<<endl;
+                    cout<<"                          |                 ";
+                    btalign(3);
+                    for (int i = 1; i <= 26; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -53,7 +70,12 @@ void showbotdeck() {
                     cout<<"                          | "<<botsum<<" / 21 |                                         |"<<endl;
                     cout<<"                          |--------------                                         |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            "<<botdeck[0]<<"   "<<botdeck[1]<<"   "<<botdeck[2]<<endl;
+                    cout<<"                          |                 ";
+                    btalign(3);
+                    for (int i = 1; i <= 26; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -68,7 +90,12 @@ void showbotdeck() {
                     cout<<"                          | "<<botsum<<" / 21 |                                             |"<<endl;
                     cout<<"                          |----------                                             |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            "<<botdeck[0]<<"   "<<botdeck[1]<<"   "<<botdeck[2]<<"   "<<botdeck[3]<<endl;
+                    cout<<"                          |                 ";
+                    btalign(4);
+                    for (int i = 1; i <= 22; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -81,7 +108,12 @@ void showbotdeck() {
                     cout<<"                          | "<<botsum<<" / 21 |                                         |"<<endl;
                     cout<<"                          |--------------                                         |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            "<<botdeck[0]<<"   "<<botdeck[1]<<"   "<<botdeck[2]<<"   "<<botdeck[3]<<endl;
+                    cout<<"                          |                 ";
+                    btalign(4);
+                    for (int i = 1; i <= 22; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -96,7 +128,12 @@ void showbotdeck() {
                     cout<<"                          | "<<botsum<<" / 21 |                                             |"<<endl;
                     cout<<"                          |----------                                             |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            "<<botdeck[0]<<"   "<<botdeck[1]<<"   "<<botdeck[2]<<"   "<<botdeck[3]<<"   "<<botdeck[4]<<endl;
+                    cout<<"                          |                 ";
+                    btalign(5);
+                    for (int i = 1; i <= 18; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -109,7 +146,12 @@ void showbotdeck() {
                     cout<<"                          | "<<botsum<<" / 21 |                                         |"<<endl;
                     cout<<"                          |--------------                                         |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            "<<botdeck[0]<<"   "<<botdeck[1]<<"   "<<botdeck[2]<<"   "<<botdeck[3]<<"   "<<botdeck[4]<<endl;
+                    cout<<"                          |                 ";
+                    btalign(5);
+                    for (int i = 1; i <= 18; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -124,7 +166,12 @@ void showbotdeck() {
                     cout<<"                          | "<<botsum<<" / 21 |                                             |"<<endl;
                     cout<<"                          |----------                                             |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            "<<botdeck[0]<<"   "<<botdeck[1]<<"   "<<botdeck[2]<<"   "<<botdeck[3]<<"   "<<botdeck[4]<<"   "<<botdeck[5]<<endl;
+                    cout<<"                          |                 ";
+                    btalign(6);
+                    for (int i = 1; i <= 14; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -137,7 +184,12 @@ void showbotdeck() {
                     cout<<"                          | "<<botsum<<" / 21 |                                         |"<<endl;
                     cout<<"                          |--------------                                         |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            "<<botdeck[0]<<"   "<<botdeck[1]<<"   "<<botdeck[2]<<"   "<<botdeck[3]<<"   "<<botdeck[4]<<"   "<<botdeck[5]<<endl;
+                    cout<<"                          |                 ";
+                    btalign(6);
+                    for (int i = 1; i <= 14; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -156,7 +208,12 @@ void showbotdeckfake() {
                     cout<<"                          | ? + "<<botsum-botdeck[0]<<" / 21 |                                         |"<<endl;
                     cout<<"                          |--------------                                         |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            ?   "<<botdeck[1]<<endl;
+                    cout<<"                          |                 ";
+                    bfalign(2);
+                    for (int i = 1; i <= 30; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -169,7 +226,12 @@ void showbotdeckfake() {
                     cout<<"                          | ? + "<<botsum-botdeck[0]<<" / 21 |                                          |"<<endl;
                     cout<<"                          |-------------                                          |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            ?   "<<botdeck[1]<<endl;
+                    cout<<"                          |                 ";
+                    bfalign(2);
+                    for (int i = 1; i <= 30; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -184,7 +246,12 @@ void showbotdeckfake() {
                     cout<<"                          | ? + "<<botsum-botdeck[0]<<" / 21 |                                         |"<<endl;
                     cout<<"                          |--------------                                         |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            ?   "<<botdeck[1]<<"   "<<botdeck[2]<<endl;
+                    cout<<"                          |                 ";
+                    bfalign(3);
+                    for (int i = 1; i <= 26; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -197,7 +264,12 @@ void showbotdeckfake() {
                     cout<<"                          | ? + "<<botsum-botdeck[0]<<" / 21 |                                          |"<<endl;
                     cout<<"                          |-------------                                          |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            ?   "<<botdeck[1]<<"   "<<botdeck[2]<<endl;
+                    cout<<"                          |                 ";
+                    bfalign(3);
+                    for (int i = 1; i <= 26; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -212,7 +284,12 @@ void showbotdeckfake() {
                     cout<<"                          | ? + "<<botsum-botdeck[0]<<" / 21 |                                         |"<<endl;
                     cout<<"                          |--------------                                         |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            ?   "<<botdeck[1]<<"   "<<botdeck[2]<<"   "<<botdeck[3]<<endl;
+                    cout<<"                          |                 ";
+                    bfalign(4);
+                    for (int i = 1; i <= 22; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -225,7 +302,12 @@ void showbotdeckfake() {
                     cout<<"                          | ? + "<<botsum-botdeck[0]<<" / 21 |                                          |"<<endl;
                     cout<<"                          |-------------                                          |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            ?   "<<botdeck[1]<<"   "<<botdeck[2]<<"   "<<botdeck[3]<<endl;
+                    cout<<"                          |                 ";
+                    bfalign(4);
+                    for (int i = 1; i <= 22; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -240,7 +322,12 @@ void showbotdeckfake() {
                     cout<<"                          | ? + "<<botsum-botdeck[0]<<" / 21 |                                         |"<<endl;
                     cout<<"                          |--------------                                         |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            ?   "<<botdeck[1]<<"   "<<botdeck[2]<<"   "<<botdeck[3]<<"   "<<botdeck[4]<<endl;
+                    cout<<"                          |                 ";
+                    bfalign(5);
+                    for (int i = 1; i <= 18; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -253,7 +340,12 @@ void showbotdeckfake() {
                     cout<<"                          | ? + "<<botsum-botdeck[0]<<" / 21 |                                          |"<<endl;
                     cout<<"                          |-------------                                          |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            ?   "<<botdeck[1]<<"   "<<botdeck[2]<<"   "<<botdeck[3]<<"   "<<botdeck[4]<<endl;
+                    cout<<"                          |                 ";
+                    bfalign(5);
+                    for (int i = 1; i <= 18; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -268,7 +360,12 @@ void showbotdeckfake() {
                     cout<<"                          | ? + "<<botsum-botdeck[0]<<" / 21 |                                         |"<<endl;
                     cout<<"                          |--------------                                         |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            ?   "<<botdeck[1]<<"   "<<botdeck[2]<<"   "<<botdeck[3]<<"   "<<botdeck[4]<<"   "<<botdeck[5]<<endl;
+                    cout<<"                          |                 ";
+                    bfalign(6);
+                    for (int i = 1; i <= 14; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -281,7 +378,12 @@ void showbotdeckfake() {
                     cout<<"                          | ? + "<<botsum-botdeck[0]<<" / 21 |                                          |"<<endl;
                     cout<<"                          |-------------                                          |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
-                    cout<<"                                            ?   "<<botdeck[1]<<"   "<<botdeck[2]<<"   "<<botdeck[3]<<"   "<<botdeck[4]<<"   "<<botdeck[5]<<endl;
+                    cout<<"                          |                 ";
+                    bfalign(6);
+                    for (int i = 1; i <= 14; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
                     cout<<"                          |                                                       |"<<endl;
@@ -294,7 +396,12 @@ void showplayerdeck() {
         switch(totalcards) {
             case 2:
                 if (playersum >= 10) {
-                    cout<<"                                            "<<deck[0]<<"   "<<deck[1]<<endl;
+                    cout<<"                          |                 ";
+                    align(2);
+                    for (int i = 1; i <= 30; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |_________                                              |"<<endl;
                     cout<<"                          | "<<playersum<<" / 21 |                                             |"<<endl;
                     cout<<"		          |_________|_____________________________________________|"<<endl;
@@ -303,7 +410,12 @@ void showplayerdeck() {
                     cout<<endl;
                 }
                 else {
-                    cout<<"                                            "<<deck[0]<<"   "<<deck[1]<<endl;
+                    cout<<"                          |                 ";
+                    align(2);
+                    for (int i = 1; i <= 30; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |_________                                              |"<<endl;
                     cout<<"                          | "<<playersum<<" / 21  |                                             |"<<endl;
                     cout<<"		          |_________|_____________________________________________|"<<endl;
@@ -314,7 +426,12 @@ void showplayerdeck() {
                 break;
             case 3:
                if (playersum >= 10) {
-                    cout<<"                                            "<<deck[0]<<"   "<<deck[1]<<"   "<<deck[2]<<endl;
+                    cout<<"                          |                 ";
+                    align(3);
+                    for (int i = 1; i <= 26; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |_________                                              |"<<endl;
                     cout<<"                          | "<<playersum<<" / 21 |                                             |"<<endl;
                     cout<<"		          |_________|_____________________________________________|"<<endl;
@@ -323,7 +440,12 @@ void showplayerdeck() {
                     cout<<endl;
                 }
                 else {
-                    cout<<"                                            "<<deck[0]<<"   "<<deck[1]<<"   "<<deck[2]<<endl;
+                    cout<<"                          |                 ";
+                    align(3);
+                    for (int i = 1; i <= 26; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |_________                                              |"<<endl;
                     cout<<"                          | "<<playersum<<" / 21  |                                             |"<<endl;
                     cout<<"		          |_________|_____________________________________________|"<<endl;
@@ -334,7 +456,12 @@ void showplayerdeck() {
                 break;
             case 4:
                 if (playersum >= 10) {
-                    cout<<"                                            "<<deck[0]<<"   "<<deck[1]<<"   "<<deck[2]<<"   "<<deck[3]<<endl;
+                    cout<<"                          |                 ";
+                    align(4);
+                    for (int i = 1; i <= 22; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |_________                                              |"<<endl;
                     cout<<"                          | "<<playersum<<" / 21 |                                             |"<<endl;
                     cout<<"		          |_________|_____________________________________________|"<<endl;
@@ -343,7 +470,12 @@ void showplayerdeck() {
                     cout<<endl;
                 }
                 else {
-                    cout<<"                                            "<<deck[0]<<"   "<<deck[1]<<"   "<<deck[2]<<"   "<<deck[3]<<endl;
+                    cout<<"                          |                 ";
+                    align(4);
+                    for (int i = 1; i <= 22; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |_________                                              |"<<endl;
                     cout<<"                          | "<<playersum<<" / 21  |                                             |"<<endl;
                     cout<<"		          |_________|_____________________________________________|"<<endl;
@@ -354,7 +486,12 @@ void showplayerdeck() {
                 break;
             case 5:
                 if (playersum >= 10) {
-                    cout<<"                                            "<<deck[0]<<"   "<<deck[1]<<"   "<<deck[2]<<"   "<<deck[3]<<"   "<<deck[4]<<endl;
+                    cout<<"                          |                 ";
+                    align(5);
+                    for (int i = 1; i <= 18; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |_________                                              |"<<endl;
                     cout<<"                          | "<<playersum<<" / 21 |                                             |"<<endl;
                     cout<<"		          |_________|_____________________________________________|"<<endl;
@@ -363,7 +500,12 @@ void showplayerdeck() {
                     cout<<endl;
                 }
                 else {
-                    cout<<"                                            "<<deck[0]<<"   "<<deck[1]<<"   "<<deck[2]<<"   "<<deck[3]<<"   "<<deck[4]<<endl;
+                    cout<<"                          |                 ";
+                    align(5);
+                    for (int i = 1; i <= 18; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |_________                                              |"<<endl;
                     cout<<"                          | "<<playersum<<" / 21  |                                             |"<<endl;
                     cout<<"		          |_________|_____________________________________________|"<<endl;
@@ -374,7 +516,12 @@ void showplayerdeck() {
                 break;
             case 6:
                 if (playersum >= 10) {
-                    cout<<"                                            "<<deck[0]<<"   "<<deck[1]<<"   "<<deck[2]<<"   "<<deck[3]<<"   "<<deck[4]<<"   "<<deck[5]<<endl;
+                    cout<<"                          |                 ";
+                    align(6);
+                    for (int i = 1; i <= 14; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |_________                                              |"<<endl;
                     cout<<"                          | "<<playersum<<" / 21 |                                             |"<<endl;
                     cout<<"		          |_________|_____________________________________________|"<<endl;
@@ -383,7 +530,12 @@ void showplayerdeck() {
                     cout<<endl;
                 }
                 else {
-                    cout<<"                                            "<<deck[0]<<"   "<<deck[1]<<"   "<<deck[2]<<"   "<<deck[3]<<"   "<<deck[4]<<"   "<<deck[5]<<endl;
+                    cout<<"                          |                 ";
+                    align(6);
+                    for (int i = 1; i <= 14; i++) {
+                            cout<<" ";
+                    }
+                    cout<<"|"<<endl;
                     cout<<"                          |_________                                              |"<<endl;
                     cout<<"                          | "<<playersum<<" / 21  |                                             |"<<endl;
                     cout<<"		          |_________|_____________________________________________|"<<endl;
