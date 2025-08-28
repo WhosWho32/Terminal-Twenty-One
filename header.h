@@ -8,6 +8,10 @@ void winner(); //Declare the winner of the game
 void choice(); //Player choice
 void botdecide(); //Bot decides
 void draw(); //Make the player draw cards
+void align(int c); //Make the numbers stay in place and not push the sides of the table
+void bfalign(int bf); //Bot deck fake card alignment
+void btalign(int bt); //True bot deck card alignment
+extern short int pEMPTYSPACE; //Count how many empty spaces are to the right of the numbers for the plauer
 extern short int botsum; //The total the bot has
 extern short int playersum; //The total the player has
 extern short int bottotalcards; //How many cards the bot has
