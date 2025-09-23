@@ -1,6 +1,6 @@
 //Terminal Twenty One game inspired by the Roblox game Twenty one, except there's no trump cards
 //By WhosWho
-//Last edited: August 27th
+//Last edited: September 23rd
 #include <iostream>
 #include <string>
 #include <cstdlib>
@@ -23,6 +23,7 @@ bool botstays = false;
 bool playerlose = false;
 bool botlose = false;
 bool botdecision = false;
+string replay;
 short int n = 10;
 string c;
 string botdeckfake[1] = {"?"};
@@ -187,8 +188,6 @@ public:
         showbotdeckfake();
         showplayerdeck();
         choice();
-
-
         //If the player and bot draw the same card, make the bot change it
         for (int r : deck) {
             if (botdeck.back() == r) {
@@ -198,10 +197,25 @@ public:
         if (playerstays == true && botstays == true) {
             winner();
         }
-
-
 }
-
+    ~Game() {
+        cout<<endl;
+        cout<<"Would you like to play again? [y/n]: ";
+        cin>>replay;
+        while (!(replay.size()==1)) {
+            cout<<"Unknown command. Make sure you wrote the correct letter and try again."<<endl;
+            cin.clear();
+            cin.ignore(10000,'\n');
+            cout<<"Would you like to play again? [y/n]: ";
+            cin>>replay;
+        }
+        if (replay == "y") {
+           deck.clear();
+           botdeck.clear();
+           n = 10;
+           Game restart;
+        }
+    }
 };
 
 int main() {
