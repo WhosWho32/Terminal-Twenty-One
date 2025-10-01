@@ -1,6 +1,6 @@
 //Terminal Twenty One game inspired by the Roblox game Twenty one, except there's no trump cards
 //By WhosWho
-//Last edited: September 23rd
+//Last edited: August 27th
 #include <iostream>
 #include <string>
 #include <cstdlib>
@@ -11,7 +11,8 @@ using std::cout;
 using std::endl;
 using std::cin;
 using std::string;
-vector <int> allcards;
+vector <int> allcards = {1,2,3,4,5,6,7,8,9,10,11};
+short int decider;
 vector <int> deck;
 vector <int> botdeck;
 short int botsum = 0;
@@ -138,48 +139,38 @@ class Game {
 public:
 
     Game() {
-        cout<<R"(
-                                 _____                   _             _
-                                |_   _|__ _ __ _ __ ___ (_)_ __   __ _| |
-                                  | |/ _ \ '__| '_ ` _ \| | '_ \ / _` | |
-                                  | |  __/ |  | | | | | | | | | | (_| | |
-                                  |_|\___|_|  |_| |_| |_|_|_| |_|\__,_|_|
-                                 _____                    _            ___
-                                |_   _|_      _____ _ __ | |_ _   _   / _ \ _ __   ___
-                                  | | \ \ /\ / / _ \ '_ \| __| | | | | | | | '_ \ / _ \
-                                  | |  \ V  V /  __/ | | | |_| |_| | | |_| | | | |  __/
-                                  |_|   \_/\_/ \___|_| |_|\__|\__, |  \___/|_| |_|\___|
-                                                              |___/                    )"<<endl;
-        cout<<endl;
-        cout<<"// The terminal version of Twenty One Roblox game except there's no trump cards. Similar to Blackjack."<<endl;
-        cout<<"// Program made by: WhosWho"<<endl;
-        cout<<"// Github: https://github.com/WhosWho32"<<endl;
-        deck.push_back(1+rand()%11);
-        deck.push_back(1+rand()%11);
-        botdeck.push_back(1+rand()%11);
-        botdeck.push_back(1+rand()%11);
-        //Set all cards
-        for (int i = 1; i <=11; i++) {
-            allcards.push_back(i);
-            if (deck[0] == i || deck[1] == i || botdeck[0] == i || botdeck[1] == i) {
-                allcards.pop_back();
-                n--;
+        decider = rand()%allcards.size(); //Choose the index
+        deck.push_back(allcards[decider]);
+        for (int i = 0; i <= allcards.size()-1; i++) {
+            if (allcards[i] == deck[0]) {
+                allcards.erase(allcards.begin()+i);
             }
         }
+        
+        decider = rand()%allcards.size();
+        deck.push_back(allcards[decider]);
+        for (int i = 0; i <= allcards.size()-1; i++) {
+            if (allcards[i] == deck[1]) {
+                allcards.erase(allcards.begin()+i);
+            }
+        }
+        decider = rand()%allcards.size(); //Choose the index
+        botdeck.push_back(allcards[decider]);
+        for (int i = 0; i <= allcards.size()-1; i++) {
+            if (allcards[i] == botdeck[0]) {
+                allcards.erase(allcards.begin()+i);
+            }
+        }
+        decider = rand()%allcards.size(); //Choose the index
+        botdeck.push_back(allcards[decider]);
+        for (int i = 0; i <= allcards.size()-1; i++) {
+            if (allcards[i] == botdeck[1]) {
+                allcards.erase(allcards.begin()+i);
+            }
+        }
+        n = 6;
         totalcards = deck.size();
         bottotalcards = botdeck.size();
-        while (deck.front() == botdeck.front() || deck.front() == botdeck.back()) {
-            deck.front() == allcards[rand()%(n+1)]; //Re-roll for player if they have the same card as the bot
-        }
-        while (deck.back() == botdeck.front() || deck.back() == botdeck.back()) {
-            deck.back() == allcards[rand()%(n+1)]; //Re-roll for player if they have the same card as the bot
-        }
-        while (deck.front() == deck.back()) {
-            deck.back() = allcards[rand()%(n+1)]; // Choose a new card for the 2nd card in case they repeat
-        }
-        while (botdeck.front() ==botdeck.back()) {
-            botdeck.back() = allcards[rand()%(n+1)]; // Choose a new card for the 2nd card in case they repeat
-        }
         //Calculate the total sum for the cards that the bot has
         botsum = botdeck[0] + botdeck[1];
         //Calculate the total sum for the cards that the player has
@@ -213,6 +204,14 @@ public:
            deck.clear();
            botdeck.clear();
            n = 10;
+           allcards = {1,2,3,4,5,6,7,8,9,10,11};
+           botsum = 0;
+           playersum = 0;
+           playerstays = false;
+           botstays = false;
+           playerlose = false;
+           botlose = false;
+           botdecision = false;
            Game restart;
         }
     }
@@ -220,5 +219,21 @@ public:
 
 int main() {
     srand(time(NULL));
+     cout<<R"(
+                                 _____                   _             _
+                                |_   _|__ _ __ _ __ ___ (_)_ __   __ _| |
+                                  | |/ _ \ '__| '_ ` _ \| | '_ \ / _` | |
+                                  | |  __/ |  | | | | | | | | | | (_| | |
+                                  |_|\___|_|  |_| |_| |_|_|_| |_|\__,_|_|
+                                 _____                    _            ___
+                                |_   _|_      _____ _ __ | |_ _   _   / _ \ _ __   ___
+                                  | | \ \ /\ / / _ \ '_ \| __| | | | | | | | '_ \ / _ \
+                                  | |  \ V  V /  __/ | | | |_| |_| | | |_| | | | |  __/
+                                  |_|   \_/\_/ \___|_| |_|\__|\__, |  \___/|_| |_|\___|
+                                                              |___/                    )"<<endl;
+        cout<<endl;
+        cout<<"// The terminal version of Twenty One Roblox game except there's no trump cards. Similar to Blackjack."<<endl;
+        cout<<"// Program made by: WhosWho"<<endl;
+        cout<<"// Github: https://github.com/WhosWho32"<<endl;
     Game start;
 }
