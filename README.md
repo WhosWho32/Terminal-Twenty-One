@@ -5,4 +5,17 @@ If the program happens to crash (it will happen probably a lot), just run it unt
 
 Have fun with it!
 
+If you're using Visual Studio Code, use the following command to compile the program:
+
+```
+g++ -o TerminalTwentyOne.exe alignments.cpp botdecision.cpp main.cpp showtable.cpp winner.cpp
+```
+
+And to run the program:
+```
+./TerminalTwentyOne.exe
+```
+
+
+
 - WhosWho
