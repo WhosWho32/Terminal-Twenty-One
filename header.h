@@ -1,6 +1,10 @@
 #pragma once
+
 #include <vector>
+#include <iostream>
 using std::vector;
+using std::cout;
+using std::endl;
 void showbotdeck(); //Show the true deck of the bot
 void showbotdeckfake(); //Show the "fake" bot deck, with the ? in place of the actual number
 void showplayerdeck(); //Show the deck of the player
