@@ -1,11 +1,9 @@
-#include <iostream>
 #include "header.h"
-using std::cout;
-using std::endl;
+
 void winner() {
-    if (playerstays == true && botstays == true) {
+    if (playerstays && botstays) {
         //If player isn't above 21
-        if (playerlose == false) {
+        if (!playerlose) {
             //And their total is bigger than bot's total, they win
             if (playersum > botsum) {
                 showbotdeck();
@@ -15,7 +13,7 @@ void winner() {
             }
         }
         //If player is above 21, they automatically lose
-        else if (playerlose == true) {
+        else if (playerlose) {
             if (playersum > botsum) {
                 showbotdeck();
                 showplayerdeck();
@@ -25,7 +23,7 @@ void winner() {
             
         }
         //If bot isn't abovw 21
-        if (botlose == false) {
+        if (!botlose) {
             //And bot's total is bigger than player's total, the bot wins
             if (playersum < botsum) {
                 showbotdeck();
@@ -36,7 +34,7 @@ void winner() {
         }
         
         //If the bot is above 21, they automatically lose
-        else if (botlose == true) {
+        else if (botlose) {
             if (playersum < botsum) {
                 showbotdeck();
                 showplayerdeck();
