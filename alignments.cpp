@@ -82,7 +82,7 @@ void btalign(int bt) {
             //Empty space 26
             btalign(2);
             cout<<botdeck[2];
-            cout<<(botdeck[3] < 10 ? "   " : "  ");
+            cout<<(botdeck[2] < 10 ? "   " : "  ");
             break;
         case 4:
             //Empty space 22
